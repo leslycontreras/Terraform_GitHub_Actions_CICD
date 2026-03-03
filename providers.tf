@@ -5,10 +5,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "les-s3bucket-03march"
+    bucket         = "lesly-s3bucket-03march"
     key            = "globalstate/s3/terraform.tfstate"
     region         = "eu-west-1"
-    dynamodb_table = "les-03march-dblocks"
+    dynamodb_table = "lesly-03march-dblocks"
     encrypt        = true
   }
 }
